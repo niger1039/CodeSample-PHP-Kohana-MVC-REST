@@ -1,0 +1,4 @@
+.sass_cache
+.node_modules
+application/logs
+node_modules

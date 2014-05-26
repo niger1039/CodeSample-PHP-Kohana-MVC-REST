@@ -1,0 +1,40 @@
+//transitions
+$default-transition-property:  all;
+$default-transition-duration: 1s;
+$default-transition-function: ease;
+$default-transition-delay: false;
+
+//structure
+
+* {
+	margin: 0;
+	padding: 0;
+
+	&.hidden {
+		@include transition(all 0.25s ease-in-out);
+		@include opacity(0);
+		display: block !important;
+		visibility: hidden !important;
+	}
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}

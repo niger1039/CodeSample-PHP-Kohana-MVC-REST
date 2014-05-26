@@ -1,0 +1,120 @@
+$base-font-size : 18px;
+$base-line-height : 24px;
+@include establish-baseline;
+
+html {
+	font-family: 'Arial';
+	color: #000;
+	
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+a {
+	color: #808080;
+	text-decoration: none;
+}
+
+
+
+body {
+  padding: 20px;
+  > header, 
+  > section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+#user-top-panel {
+  float: right;
+  width: 300px;
+}
+
+#user-logged-in {
+  display: none;
+}
+
+#user-form {
+  .error-msg {
+    font-weight: bold;
+    font-size:11px;
+    color:red;
+  }
+}
+
+#add-post {
+  width: 600px;
+  margin: 0 auto 10px;
+  text-align: right;
+  h3 {
+    text-align: left;
+  }
+  input[type=text] {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  input[type=submit] {
+    margin-top: 5px;
+  }
+}
+#posts {
+  width: 800px;
+  margin: 0 auto;
+  ul { list-style: none; }
+  > ul {
+    > li {
+      margin-bottom: 15px;
+      > .text {
+        font-size: 14px;
+        padding: 5px;
+        color: #999;
+      }
+      h3 {
+        font-size: 15px;
+      }
+      .comments {
+        li {
+          background: #eee;
+          margin: 3px 0;
+          padding: 1px 10px;
+          font-size: 15px;
+          font-weight: bold;
+          .comment { font-weight: normal; }
+        }
+        form {
+          width: 400px;
+          margin: 0 auto;
+          text-align: right;
+          h4 {
+            text-align: left;
+            font-size: 13px;
+          }
+          textarea {
+            width: 100%;
+            resize: none;
+            height: 40px;
+          }
+          input {
+            font-size: 13px;
+          }
+        }
+      }
+      h3, .comments {
+        width: 600px;
+        margin: 0 auto;
+      }
+    }
+    h2 {
+      padding: 5px;
+      font-size: 20px;
+    }
+    .user {
+      float: right;
+    }
+  }
+}

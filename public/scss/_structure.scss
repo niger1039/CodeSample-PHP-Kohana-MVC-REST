@@ -1,0 +1,16 @@
+#user-top-panel {
+  float: right;
+  width: 300px;
+}
+
+#user-logged-in {
+  display: none;
+}
+
+#user-form {
+  .error-msg {
+    font-weight: bold;
+    font-size:11px;
+    color:red;
+  }
+}
