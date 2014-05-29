@@ -120,6 +120,9 @@ class Controller_Posts extends Controller
         $tags = array();
         $comments = array();
 
+        // Ensures that the User is going to be in the return from as_array()
+        $post->user;
+        
         // Begins building post data array 
         $response = array(
             'post' => $post->as_array(),

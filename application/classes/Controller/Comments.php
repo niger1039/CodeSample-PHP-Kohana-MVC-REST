@@ -40,6 +40,9 @@ class Controller_Comments extends Controller
                 // Saves comment and internally executes validation
                 $comment->save();
                 
+                // Ensures that the User is going to be in the return from as_array()
+                $comment->user;
+        
                 // Build successful response array
                 $response = array(
                     'status' => 'success',
